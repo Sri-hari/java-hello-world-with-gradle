@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: windows-latest
     
     steps:
     - uses: actions/checkout@v1
@@ -19,4 +19,4 @@ jobs:
         java-version: 1.11
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew.bat build
